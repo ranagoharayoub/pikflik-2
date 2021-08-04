@@ -1,0 +1,222 @@
+.main{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+/* <!------------ header ----------> */
+.header{
+    min-height: 10vh;
+    /* border-bottom: 1px solid lightgray; */
+    box-shadow: 0px 0.5vh rgb(241, 241, 241);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    padding: 0px 2vw;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.backarrow>img, .menu>img{ 
+    cursor: pointer;
+    width: 1.3vw;
+}
+
+.logo>img{
+    cursor: pointer;
+    width: 5vw;
+}
+/* <!------------ Sidebar ----------> */
+.sidebar{
+    position: absolute;
+    top: 10.5vh;
+    right: 0.2%;
+    left: 80%;
+    bottom: 30%;
+    /* background-color: aquamarine; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: space-between;
+    display: none;
+    flex-direction: column;
+    padding: 1.5vh 1vw;
+}
+
+/* <!------------ Menu List ----------> */
+.upper{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(./Font/Proxima\ Nova\ Font.otf);
+}
+
+.custom, .popular, .holidays, .decor, .awards {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-family: 'ProximaNova';
+    font-size: 1.3vw;
+    font-weight: bold;
+    /* background-color: aquamarine; */
+}
+
+.custom:hover, .popular:hover, .holidays:hover, .decor:hover, .awards:hover {
+    cursor: pointer;
+   color: #EC1B50;
+}
+
+.custom>img, .popular>img, .holidays>img, .decor>img, .awards >img{
+    width: 3vw;
+    padding-right: 2vw;
+}
+
+/* <!------------ Checkout Button ----------> */
+
+.lower{
+    flex: 1;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* background-color: aqua; */
+    font-family: 'ProximaNova';
+    font-weight: bold;
+}
+
+.lower .checkout{
+    width: 100%;
+    height: 40%;
+    background-color: #EC1B50;
+    border-radius: 0.5vw;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* <!------------ Menu on Hover ----------> */
+
+.menu-hover{
+    position: absolute;
+    top: 11vh;
+    left: 62%;
+    right: 20.5%;
+    bottom: 50%;
+    background-color: #EC1B50;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 0px 2vw;
+    color: white;
+    font-family: 'ProximaNova';
+    /* font-weight: bold; */
+    font-size: 1.3vw;
+}
+
+/* <!------------ Checkout Section----------> */
+
+.checkout-process{
+    position: absolute;
+    top: 0.5%;
+    right: 0.2%;
+    left: 65%;
+    bottom: 0%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border: 0.2vw solid lightgray;
+    /* justify-content: space-between; */
+    display: none;
+    flex-direction: column;
+    padding: 1.5vh 1vw;
+    font-family: 'ProximaNova';
+}
+
+.checkout-process .close{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aquamarine; */
+}
+
+.checkout-process .close>img{
+    width: 3vw;
+    cursor: pointer;
+}
+
+.checkout-process .title{
+    color: black;
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-bottom: 5vh;
+}
+
+.checkout-process .add-address {
+    display: flex;
+    align-items: center;
+    margin: 2vh 0px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    /* justify-content: space-between; */
+}
+
+
+.checkout-process .add-address>img{
+    width: 2vw;
+    padding-right: 3vw;
+}
+
+.checkout-process hr{
+    width: 100%;
+}
+
+.checkout-process .add-promo{
+    text-decoration: underline;
+    
+    padding: 1vh 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.checkout-process .add-promo::placeholder{
+    opacity: 0.7;
+}
+
+.checkout-process .product{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 0%;
+}
+
+.checkout-process .product .heading{
+    opacity: 0.7;
+}
+
+.checkout-process .place-order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-process .order-btn{
+    margin-top: 10vh;
+    display: grid;
+    place-items: center;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 70%;
+    background-color: #EC1B50;
+    color: white;
+}
