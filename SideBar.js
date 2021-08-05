@@ -33,13 +33,7 @@ function submenu(params) {
 
     params === 'close' ?  document.getElementById("submenu").style.display = 'none' : null
 
-    if (params=='custom') {
-        document.getElementById("submenu").style.display = 'flex'
-        document.getElementById("submenu").style.top = '11vh'
-        document.getElementById("submenu").style.bottom = '50%'
-        
-    }
-    else if(params=='popular') {
+   if(params=='popular') {
         document.getElementById("submenu").style.display = 'flex'
         document.getElementById("submenu").style.top = '21vh'
         document.getElementById("submenu").style.bottom = '40%'
@@ -53,8 +47,8 @@ function submenu(params) {
     }
     else if(params=='holidays') {
         document.getElementById("submenu").style.display = 'flex'
-        document.getElementById("submenu").style.top = '31vh'
-        document.getElementById("submenu").style.bottom = '30%'
+        document.getElementById("submenu").style.top = '30vh'
+        document.getElementById("submenu").style.bottom = '31%'
 
         document.getElementById("subtitle").innerHTML = "Merry Christmas"
         document.getElementById("subtitle1").innerHTML = "Happy Anniversary"
@@ -64,8 +58,8 @@ function submenu(params) {
     }
     else if(params=='decor') {
         document.getElementById("submenu").style.display = 'flex'
-        document.getElementById("submenu").style.top = '41vh'
-        document.getElementById("submenu").style.bottom = '20%'
+        document.getElementById("submenu").style.top = '38vh'
+        document.getElementById("submenu").style.bottom = '23%'
 
         document.getElementById("subtitle").innerHTML = "Miss You Everyday"
         document.getElementById("subtitle1").innerHTML = "Love You Forever"
@@ -75,8 +69,8 @@ function submenu(params) {
     }
     else if(params=='awards') {
         document.getElementById("submenu").style.display = 'flex'
-        document.getElementById("submenu").style.top = '51vh'
-        document.getElementById("submenu").style.bottom = '10%'
+        document.getElementById("submenu").style.top = '47vh'
+        document.getElementById("submenu").style.bottom = '14%'
 
         document.getElementById("subtitle").innerHTML = "With Highest Honors"
         document.getElementById("subtitle1").innerHTML = "Graduate"

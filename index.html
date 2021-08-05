@@ -27,50 +27,159 @@
     </div>
 
     <div id="sidebar" class="sidebar">
-
+    <!------------ Menu List ---------->
         <div class="upper">
 
-            <div class="custom">
-                <img src="./media/Asset 15-8.png" />
-                <div class="title">
+            <div  class="custom">
+                <img src="./media/Asset 15-8.png"/>
+                <a style="text-decoration: none; color: black;" href="/ThirdPage.html" class="title">
                     Custom
-                </div>
+                </a>
             </div>
-
-            <div class="popular">
-                <img src="./media/Asset 16-8.png" />
+    
+            <div onclick="submenu('popular')" class="popular">
+                <img src="./media/Asset 16-8.png"/>
                 <div class="title">
                     Popular
                 </div>
             </div>
-
-            <div class="holidays">
-                <img src="./media/Asset 17-8.png" />
+    
+            <div onclick="submenu('holidays')" class="holidays">
+                <img src="./media/Asset 17-8.png"/>
                 <div class="title">
                     Holidays
                 </div>
             </div>
-
-            <div class="decor">
-                <img src="./media/Asset 18-8.png" />
+    
+            <div onclick="submenu('decor')" class="decor">
+                <img src="./media/Asset 18-8.png"/>
                 <div class="title">
                     Decor
                 </div>
             </div>
-
-            <div class="awards">
-                <img src="./media/Asset 19-8.png" />
+    
+            <div onclick="submenu('awards')" class="awards">
+                <img src="./media/Asset 19-8.png"/>
                 <div class="title">
                     Awards
                 </div>
             </div>
 
         </div>
-
+<!------------ Checkout Button ---------->
         <div class="lower">
 
-            <div class="checkout">
+            <div onclick="checkout('checkout')" id="checkout" class="checkout">
                 Checkout
+            </div>
+    
+        </div>
+
+    </div>
+<!------------ Menu on Hover ---------->
+    <div id="submenu" class="menu-hover">
+
+        <div id="subtitle" class="subtitle">
+            Better Together
+        </div>
+
+        <div id="subtitle1" class="subtitle">
+            Blessed
+        </div>
+
+        <div id="subtitle2" class="subtitle">
+            Family
+        </div>
+
+        <div id="subtitle3" class="subtitle">
+            Live Laugh Life
+        </div>
+
+        <div id="subtitle4" class="subtitle">
+            Love
+        </div>
+
+    </div>
+
+<!------------ Checkout Section ---------->
+
+    <div id="checkout-process" class="checkout-process">
+
+        <div class="close">
+            <img onclick="checkout()" src='./media/Component 40 – 1.png' />
+        </div>   
+
+        <div class="title">
+            Checkout
+        </div>   
+        
+        <div style="color: #EC1B50;" class="add-address">
+            <img src="/media/Path 5.png"/>
+            <div >
+                Add Address
+            </div>
+        </div>
+
+        <div style="color: #EC1B50;" class="add-address">
+            <img src="/media/Group 24.png"/>
+            <div >
+               Add Payment Method     
+            </div>
+        </div>
+
+        <div class="add-address">
+            <img src="/media/Group 25.png"/>
+            <div >
+                Refer a Friend
+            </div>
+        </div>
+
+        <hr />
+
+        <input placeholder="Add Promo Code" class="add-promo">
+
+        <hr />
+
+        <div class="product">
+            <div class="heading">
+                Acrylic Book
+            </div>
+            <div style="opacity: 0.7;" class="price">
+                $10
+            </div>
+        </div>
+
+        <div class="product">
+            <div style="opacity: 1;" class="heading">
+                Shipping
+            </div>
+            <div class="price">
+                Free
+            </div>
+        </div>
+
+        <div class="product">
+            <div  class="heading">
+                Tax
+            </div>
+            <div style="opacity: 0.7;" class="price">
+                $10
+            </div>
+        </div>
+
+        <div class="product">
+            <div style="opacity: 1;" class="heading">
+                Total
+            </div>
+            <div class="price">
+                $10
+            </div>
+        </div>
+
+        <div class="place-order">
+
+            <div class="order-btn">
+                Place Order
             </div>
 
         </div>
