@@ -5,187 +5,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./ThirdPage.css" />
+    <link rel="stylesheet" href="./Modal.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="/SideBar.js"></script>
     <title>Pikflik</title>
 </head>
 <body class="main">
 
-    <div class="header">
+ <!------------ header ---------->
+ <div class="header">
 
-        <div class="backarrow">
-            <a href="/index.html"><img src="./media/Component 19 – 1.png" /></a>
+    <div class="backarrow">
+        <img src="./media/Component 19 – 1.png" />
+    </div>
+
+    <div class="logo">
+        <a href="/index.html"><img src="./media/Logo Concept 2 RGB-01 (1) 1.png" /></a>
+    </div>
+
+    <div  class="menu">
+        <img onclick="Switch()" src="./media/Group 3.png" />
+    </div>
+
+</div>
+<!------------ Sidebar ---------->
+<div id="sidebar" class="sidebar">
+<!------------ Menu List ---------->
+    <div class="upper">
+
+        <div  class="custom">
+            <img src="./media/Asset 15-8.png"/>
+            <a style="text-decoration: none; color: black;" href="/ThirdPage.html" class="title">
+                Custom
+            </a>
         </div>
 
-        <div class="logo">
-            <a href="/index.html"><img src="./media/Logo Concept 2 RGB-01 (1) 1.png" /></a>
+        <div onclick="submenu('popular')" class="popular">
+            <img src="./media/Asset 16-8.png"/>
+            <div class="title">
+                Popular
+            </div>
         </div>
 
-        <div class="menu">
-            <img onclick="Switch()" src="./media/Group 3.png" />
+        <div onclick="submenu('holidays')" class="holidays">
+            <img src="./media/Asset 17-8.png"/>
+            <div class="title">
+                Holidays
+            </div>
+        </div>
+
+        <div onclick="submenu('decor')" class="decor">
+            <img src="./media/Asset 18-8.png"/>
+            <div class="title">
+                Decor
+            </div>
+        </div>
+
+        <div onclick="submenu('awards')" class="awards">
+            <img src="./media/Asset 19-8.png"/>
+            <div class="title">
+                Awards
+            </div>
         </div>
 
     </div>
-
-    <div id="sidebar" class="sidebar">
-    <!------------ Menu List ---------->
-        <div class="upper">
-
-            <div  class="custom">
-                <img src="./media/Asset 15-8.png"/>
-                <a style="text-decoration: none; color: black;" href="/ThirdPage.html" class="title">
-                    Custom
-                </a>
-            </div>
-    
-            <div onclick="submenu('popular')" class="popular">
-                <img src="./media/Asset 16-8.png"/>
-                <div class="title">
-                    Popular
-                </div>
-            </div>
-    
-            <div onclick="submenu('holidays')" class="holidays">
-                <img src="./media/Asset 17-8.png"/>
-                <div class="title">
-                    Holidays
-                </div>
-            </div>
-    
-            <div onclick="submenu('decor')" class="decor">
-                <img src="./media/Asset 18-8.png"/>
-                <div class="title">
-                    Decor
-                </div>
-            </div>
-    
-            <div onclick="submenu('awards')" class="awards">
-                <img src="./media/Asset 19-8.png"/>
-                <div class="title">
-                    Awards
-                </div>
-            </div>
-
-        </div>
 <!------------ Checkout Button ---------->
-        <div class="lower">
+    <div class="lower">
 
-            <div onclick="checkout('checkout')" id="checkout" class="checkout">
-                Checkout
-            </div>
-    
+        <div onclick="checkout('checkout')" id="checkout" class="checkout">
+            Checkout
         </div>
 
     </div>
+
+</div>
 <!------------ Menu on Hover ---------->
-    <div id="submenu" class="menu-hover">
+<div id="submenu" class="menu-hover">
 
-        <div id="subtitle" class="subtitle">
-            Better Together
-        </div>
-
-        <div id="subtitle1" class="subtitle">
-            Blessed
-        </div>
-
-        <div id="subtitle2" class="subtitle">
-            Family
-        </div>
-
-        <div id="subtitle3" class="subtitle">
-            Live Laugh Life
-        </div>
-
-        <div id="subtitle4" class="subtitle">
-            Love
-        </div>
-
+    <div id="subtitle" class="subtitle">
+        Better Together
     </div>
+
+    <div id="subtitle1" class="subtitle">
+        Blessed
+    </div>
+
+    <div id="subtitle2" class="subtitle">
+        Family
+    </div>
+
+    <div id="subtitle3" class="subtitle">
+        Live Laugh Life
+    </div>
+
+    <div id="subtitle4" class="subtitle">
+        Love
+    </div>
+
+</div>
 
 <!------------ Checkout Section ---------->
 
-    <div id="checkout-process" class="checkout-process">
+<div id="checkout-process" class="checkout-process">
 
-        <div class="close">
-            <img onclick="checkout()" src='./media/Component 40 – 1.png' />
-        </div>   
+    <div class="close">
+        <img onclick="checkout()" src='./media/Component 40 – 1.png' />
+    </div>   
 
-        <div class="title">
-            Checkout
-        </div>   
-        
-        <div style="color: #EC1B50;" class="add-address">
-            <img src="/media/Path 5.png"/>
-            <div >
-                Add Address
-            </div>
+    <div class="title">
+        Checkout
+    </div>   
+    
+    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="color: #EC1B50; cursor: pointer;" class="add-address">
+        <img src="/media/Path 5.png"/>
+        <div >
+            Add Address
         </div>
+    </div>
 
-        <div style="color: #EC1B50;" class="add-address">
-            <img src="/media/Group 24.png"/>
-            <div >
-               Add Payment Method     
-            </div>
+    <div data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="color: #EC1B50; cursor: pointer" class="add-address">
+        <img src="/media/Group 24.png"/>
+        <div >
+           Add Payment Method     
         </div>
+    </div>
 
-        <div class="add-address">
-            <img src="/media/Group 25.png"/>
-            <div >
-                Refer a Friend
-            </div>
+    <div class="add-address">
+        <img src="/media/Group 25.png"/>
+        <div >
+            Refer a Friend
         </div>
+    </div>
 
-        <hr />
+    <hr />
 
-        <input placeholder="Add Promo Code" class="add-promo">
+    <input placeholder="Add Promo Code" class="add-promo">
 
-        <hr />
+    <hr />
 
-        <div class="product">
-            <div class="heading">
-                Acrylic Book
-            </div>
-            <div style="opacity: 0.7;" class="price">
-                $10
-            </div>
+    <div class="product">
+        <div class="heading">
+            Acrylic Book
         </div>
-
-        <div class="product">
-            <div style="opacity: 1;" class="heading">
-                Shipping
-            </div>
-            <div class="price">
-                Free
-            </div>
+        <div style="opacity: 0.7;" class="price">
+            $10
         </div>
+    </div>
 
-        <div class="product">
-            <div  class="heading">
-                Tax
-            </div>
-            <div style="opacity: 0.7;" class="price">
-                $10
-            </div>
+    <div class="product">
+        <div style="opacity: 1;" class="heading">
+            Shipping
         </div>
-
-        <div class="product">
-            <div style="opacity: 1;" class="heading">
-                Total
-            </div>
-            <div class="price">
-                $10
-            </div>
+        <div class="price">
+            Free
         </div>
+    </div>
 
-        <div class="place-order">
+    <div class="product">
+        <div  class="heading">
+            Tax
+        </div>
+        <div style="opacity: 0.7;" class="price">
+            $10
+        </div>
+    </div>
 
-            <div class="order-btn">
-                Place Order
-            </div>
+    <div class="product">
+        <div style="opacity: 1;" class="heading">
+            Total
+        </div>
+        <div class="price">
+            $10
+        </div>
+    </div>
 
+    <div class="place-order">
+
+        <div class="order-btn">
+            Place Order
         </div>
 
     </div>
-    </div>
+
+</div>
     <div class="page-2-cont">
         <div class="page-2-cen">
             <div class="page-2-left"><img class="acrylic-glass" src="/images/image003.png" alt=""></div>
@@ -194,6 +197,70 @@
                 <div class="add-vid"><img src="/images/Asset 20-8.png" alt=""></div>
             </div>
         </div>
+    </div>
+
+
+     <!-- Address Modal -->
+     <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Address</h5>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                    <input style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"  class='input' type="text" name="text" placeholder="Full Name" id="">
+                    <input class='input' type="text" name="text" placeholder="Address" id="">
+                    <input class='input' type="text" name="text" placeholder="Address 2" id="">
+                    <input class='input' type="text" name="text" placeholder="City" id="">
+                    <input class='input' type="text" name="text" placeholder="State" id="">
+                    <input class='input' type="text" name="text" placeholder="Zip Code" id="">
+                    <input style="border-bottom: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class='input' type="text" name="text" placeholder="Country" id="">
+                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Done</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+      <!-- Card Details -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Card Details</h5>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+                <input style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"  class='input' type="text" name="text" placeholder="Card Details" id="">
+                <input class='input' type="text" name="text" placeholder="MM/YY" id="">
+                <input class='input' type="text" name="text" placeholder="CVC" id="">
+                <input style="border-bottom: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class='input' type="text" name="text" placeholder="Email" id="">
+                
+                <div style="display: flex; margin-top: 50px; justify-content: space-evenly;">
+                    <img width="50px" src="./media/americanexpress.png" />
+                    <img width="50px" src="./media/dinersclub.png" />
+                    <img width="50px" src="./media/visa02.png" />
+                    <img width="50px" style="object-fit: contain;" src="./media/Image 1.png" />
+                    <img width="50px" style="object-fit: contain;" src="./media/Image 2.png" />
+                </div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     </div>
 </body>
 </html>

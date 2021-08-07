@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./ThirdPage.css" />
+    <link rel="stylesheet" href="./Modal.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="/SideBar.js"></script>
@@ -115,14 +116,14 @@
             Checkout
         </div>   
         
-        <div style="color: #EC1B50;" class="add-address">
+        <div data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="color: #EC1B50; cursor: pointer;" class="add-address">
             <img src="/media/Path 5.png"/>
             <div >
                 Add Address
             </div>
         </div>
 
-        <div style="color: #EC1B50;" class="add-address">
+        <div data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="color: #EC1B50; cursor: pointer" class="add-address">
             <img src="/media/Group 24.png"/>
             <div >
                Add Payment Method     
@@ -192,24 +193,66 @@
     <div class="page">
 
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Launch static backdrop modal
-  </button>
+  </button> -->
   
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Address Modal -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Address</h5>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                    <input style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"  class='input' type="text" name="text" placeholder="Full Name" id="">
+                    <input class='input' type="text" name="text" placeholder="Address" id="">
+                    <input class='input' type="text" name="text" placeholder="Address 2" id="">
+                    <input class='input' type="text" name="text" placeholder="City" id="">
+                    <input class='input' type="text" name="text" placeholder="State" id="">
+                    <input class='input' type="text" name="text" placeholder="Zip Code" id="">
+                    <input style="border-bottom: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class='input' type="text" name="text" placeholder="Country" id="">
+                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Done</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+      <!-- Card Details -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Card Details</h5>
+          
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+            
+                <input style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"  class='input' type="text" name="text" placeholder="Card Details" id="">
+                <input class='input' type="text" name="text" placeholder="MM/YY" id="">
+                <input class='input' type="text" name="text" placeholder="CVC" id="">
+                <input style="border-bottom: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class='input' type="text" name="text" placeholder="Email" id="">
+                
+                <div style="display: flex; margin-top: 50px; justify-content: space-evenly;">
+                    <img width="50px" src="./media/americanexpress.png" />
+                    <img width="50px" src="./media/dinersclub.png" />
+                    <img width="50px" src="./media/visa02.png" />
+                    <img width="50px" style="object-fit: contain;" src="./media/Image 1.png" />
+                    <img width="50px" style="object-fit: contain;" src="./media/Image 2.png" />
+                </div>
+            
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-primary">Done</button>
         </div>
       </div>
     </div>

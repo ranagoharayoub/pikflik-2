@@ -76,7 +76,7 @@
 }
 
 .custom>img, .popular>img, .holidays>img, .decor>img, .awards >img{
-    width: 3vw;
+    width: 5vw;
     padding-right: 2vw;
 }
 
@@ -172,7 +172,7 @@
 
 
 .checkout-process .add-address>img{
-    width: 2vw;
+    width: 5vw;
     padding-right: 3vw;
 }
 
@@ -212,7 +212,7 @@
 }
 
 .checkout-process .order-btn{
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     display: grid;
     place-items: center;
     border-radius: 1vw;
